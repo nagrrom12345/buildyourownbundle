@@ -2,7 +2,7 @@
 
 client_id = "820efe0a675ec66fce5aff7c3530d736"
 name = "Build your own bundle"
-application_url = "https://example.com"
+application_url = "https://ltv-reporting.onrender.com"
 embedded = true
 
 [build]
@@ -25,4 +25,9 @@ api_version = "2026-04"
 scopes = "read_customers,read_orders"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://ltv-reporting.onrender.com/auth/callback",
+  "https://ltv-reporting.onrender.com/auth/shopify/callback",
+  "https://ltv-reporting.onrender.com/api/auth",
+  "https://ltv-reporting.onrender.com/auth"
+]
